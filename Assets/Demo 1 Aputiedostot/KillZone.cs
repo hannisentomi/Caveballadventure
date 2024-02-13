@@ -17,7 +17,7 @@ public class KillZone : MonoBehaviour {
 
 	void OnCollisionEnter(Collision collision)
 	{
-		if (collision.gameObject.tag == "Pelaaja") {
+		if (collision.gameObject.tag == "Player") {
 			Debug.Log ("Level Failed!");
 			SceneManager.LoadScene (SceneManager.GetActiveScene().name);
 
