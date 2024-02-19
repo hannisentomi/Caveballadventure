@@ -5,9 +5,9 @@ public class FollowBall : MonoBehaviour
     public Transform Sphere; // Reference to the ball's Transform component
 
     //public Vector3 offset = new Vector3(0f, 5f, -10f); // Adjust this to set the camera's position relative to the ball
-        public float rotationSpeed = 2f; 
-    public float distanceFromTarget = 5f; // Etäisyys pallosta
-    public float perspectiveHeight = 20f; // Kameran korkeus pallosta
+    public float rotationSpeed = 1f; 
+    public float distanceFromTarget = 4f; // Etäisyys pallosta
+    public float perspectiveHeight = 4f; // Kameran korkeus pallosta
 
   
     private float rotationY = 0f;

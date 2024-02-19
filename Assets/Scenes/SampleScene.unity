@@ -1868,9 +1868,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Sphere: {fileID: 1885618763}
-  rotationSpeed: 5
-  distanceFromTarget: 5
-  perspectiveHeight: 2
+  rotationSpeed: 1
+  distanceFromTarget: 4
+  perspectiveHeight: 4
 --- !u!1 &970020585
 GameObject:
   m_ObjectHideFlags: 0
