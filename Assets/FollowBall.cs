@@ -7,7 +7,7 @@ public class FollowBall : MonoBehaviour
     //public Vector3 offset = new Vector3(0f, 5f, -10f); // Adjust this to set the camera's position relative to the ball
     public float rotationSpeed = 1f; 
     public float distanceFromTarget = 4f; // Etäisyys pallosta
-    public float perspectiveHeight = 4f; // Kameran korkeus pallosta
+    public float perspectiveHeight = 2f; // Kameran korkeus pallosta
 
   
     private float rotationY = 0f;
