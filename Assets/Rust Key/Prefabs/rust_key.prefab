@@ -119,4 +119,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd191a04aa4895e4db1fdbe836d4c382, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickAudioSource: {fileID: 0}
+  pickAudio: {fileID: 8300000, guid: 9d9042aa80400ce429221cf6f0782476, type: 3}
