@@ -14,11 +14,12 @@ public class KillZone : MonoBehaviour {
 	void Update () {
 		
 	}
-
+	[SerializeField] private AudioClip pickAudio;
 	void OnCollisionEnter(Collision collision)
 	{
 		if (collision.gameObject.tag == "Player") {
 			Debug.Log ("Level Failed!");
+			AudioSource.PlayClipAtPoint(pickAudio, transform.position);
 			SceneManager.LoadScene (SceneManager.GetActiveScene().name);
 
 		}

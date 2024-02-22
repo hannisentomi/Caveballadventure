@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Key : MonoBehaviour {
 
-//	[SerializeField] private Transform pickAudioSource;
+	[SerializeField] private AudioClip pickAudio;
 
 	void OnTriggerEnter(Collider other) {
 
@@ -15,6 +15,7 @@ public class Key : MonoBehaviour {
 			//other.gameObject.SendMessage("PickKey");
 		GameObject.Find("GameManager").SendMessage("PickKey");
 			//Instantiate(this.pickAudioSource);
+		AudioSource.PlayClipAtPoint(pickAudio, transform.position);
 
 			//TODO: Delete the log game object that was picked from the scene
 			Destroy(gameObject);			

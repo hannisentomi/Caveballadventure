@@ -51,5 +51,6 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Caveballadventure.sln"
+    "dotnet.defaultSolution": "Caveballadventure.sln",
+    "dotnet.preferCSharpExtension": true
 }
