@@ -9,14 +9,16 @@ public class KillZone : MonoBehaviour {
     private AudioSource audioSource;
     // Use this for initialization
     void Start () {
-        
+        audioSource = GetComponent<AudioSource>();
+        // Tämä estää audioSource-objektin tuhoutumisen uuden kohtauksen latauksen yhteydessä
+        DontDestroyOnLoad(audioSource.gameObject);
     }
 	
 	// Update is called once per frame
 	void Update () {
         
     }
-	//[SerializeField] private AudioClip pickAudio;
+	[SerializeField] private AudioClip pickAudio;
 	void OnCollisionEnter(Collision collision)
 	{
         audioSource = GetComponent<AudioSource>();
@@ -24,8 +26,8 @@ public class KillZone : MonoBehaviour {
         if (collision.gameObject.tag == "Player") {
             
             Debug.Log ("Level Failed!");
-			//AudioSource.PlayClipAtPoint(pickAudio, transform.position);
 			SceneManager.LoadScene (SceneManager.GetActiveScene().name);
+            
 
 		}
 	}
