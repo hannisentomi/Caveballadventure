@@ -5,8 +5,9 @@ using UnityEngine;
 public class Key : MonoBehaviour {
 
 	[SerializeField] private AudioClip pickAudio;
+	
 
-	void OnTriggerEnter(Collider other) {
+    void OnTriggerEnter(Collider other) {
 
 		Debug.Log("Collision Enter " + other.gameObject.name);
 		//if(other.gameObject.name == "FPSController")
