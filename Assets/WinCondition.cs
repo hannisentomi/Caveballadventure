@@ -5,11 +5,11 @@ using UnityEngine;
 public class WinCondition : MonoBehaviour
 {
     public Inventory playerInventory;
-    public GameObject winText;
+    public GameObject WinText;
 
     private void Start()
     {
-        winText.SetActive(false); // Alussa voittoilmoitus on pois päältä
+        WinText.SetActive(false); // Alussa voittoilmoitus on pois päältä
     }
 
     private void OnTriggerEnter(Collider other)
@@ -19,7 +19,7 @@ public class WinCondition : MonoBehaviour
             if (playerInventory.amountOfKeys == 3 && Inventory.doorOpen)
             {
                 // Pelaaja koski oveen ja hänellä on 3 avainta, näytä voittoilmoitus
-                winText.SetActive(true);
+                WinText.SetActive(true);
             }
         }
     }
