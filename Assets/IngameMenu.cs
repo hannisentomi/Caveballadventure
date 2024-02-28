@@ -7,7 +7,7 @@ public class IngameMenu : MonoBehaviour
 
     bool menuOpen = false;
     public GameObject mainMenuPanel;
-    public GameObject objectivesMenuPanel;
+    //public GameObject objectivesMenuPanel;
     public GameObject settingsPanel;
     public GameObject sphere;
 
@@ -66,7 +66,7 @@ public class IngameMenu : MonoBehaviour
     public void HideAllMenus()
     {
         mainMenuPanel.SetActive(false);
-        objectivesMenuPanel.SetActive(false);
+       // objectivesMenuPanel.SetActive(false);
         settingsPanel.SetActive(false);
     }
 
@@ -76,12 +76,12 @@ public class IngameMenu : MonoBehaviour
         mainMenuPanel.SetActive(true);
     }
 
-    public void ShowObjectivesPanel()
+    /*public void ShowObjectivesPanel()
     {
         Debug.Log("show objectives");
         HideAllMenus();
         objectivesMenuPanel.SetActive(true);
-    }
+    }*/
 
     public void ShowSettingsPanel()
     {

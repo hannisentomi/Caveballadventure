@@ -6,6 +6,7 @@ MonoImporter:
   defaultReferences:
   - playerInventory: {instanceID: 0}
   - WinText: {fileID: 9095048999891254327, guid: bda682de6b8e4ab4dab12584ab1c2884, type: 3}
+  - anim: {fileID: 11100000, guid: f054e366653a7c14186595569de398f9, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
